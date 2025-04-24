@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --brand-primary: #0A6579;
+  --brand-secondary: #484848;
+  --brand-accent: #F99E15;
+}
+
+
+
+body{
+  font-family: "Albert Sans", sans-serif;
+}
+
+h2{
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 50px !important;
+  font-weight: 900;
+}
+
+/* header and navbar section */
+#header{
+  padding: 2em 0;
+}
+
+.location-txt{
+  font-size: 23px;
+  font-weight: 700;
+}
+
+.call-txt{
+  font-size: 16px;
+  font-weight: 700;
+
+}
+
+.number-txt{
+  font-size: 24px;
+  font-weight: 700;
+
+}
+
+#emergency{
+  font-size:17px !important;
+  font-family: "Red Hat Display", sans-serif;
+
+}
+
+.custom-accent-btn {
+  background-color: var(--brand-accent) !important;
+  border: none;
+  border-radius: 0; 
+}
+
+.custom-accent-btn:hover {
+  background-color: #e68a00; /* slightly darker for hover effect */
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  font-weight: 700;
+}
+
+/* /header and navbar section */
+
+/* request quote section*/
+.quote-banner {
+  background-color: #f8f9fa; /* light gray background for separation */
+  padding: none !important;
+  margin:none !important;
+}
+
+.quote-banner h2 {
+  font-size: 2rem;
+}
+
+#quote-banner-txt{
+  font-size: 18px;
+  padding: 5rem;
+}
+
+@media (max-width: 767.98px) {
+  .quote-banner h2 {
+    font-size: 1.5rem;
+  }
+}
+/* / request quote section*/
+
