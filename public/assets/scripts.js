@@ -91,4 +91,29 @@ const buildNavigation = async () => {
   }
 };
 
+
+
+// Branch Locator Functionality
+document.addEventListener("DOMContentLoaded", () => {
+  const mapIframe = document.getElementById("map");
+  const buttons = document.querySelectorAll('#branch-locator button');
+
+  buttons.forEach(button => {
+    button.addEventListener("click", () => {
+      // Update the iframe's src to the button's data-iframe-src
+      const newSrc = button.getAttribute("data-iframe-src");
+      mapIframe.src = newSrc;
+
+      // Optional: highlight the active button
+      buttons.forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+    });
+  });
+
+  // Optionally load the first map on page load
+  if (buttons.length > 0) {
+    mapIframe.src = buttons[0].getAttribute("data-iframe-src");
+  }
+});
+
 document.addEventListener('DOMContentLoaded', buildNavigation);

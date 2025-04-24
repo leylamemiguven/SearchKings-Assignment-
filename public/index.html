@@ -102,8 +102,10 @@
         <div class="col-12 col-md-4 mb-4 mb-md-0">
           <div class="bg-light p-4 h-100 text-center rounded">
             <img src="assets/images/ductless.svg" alt="Ductless" class="mb-3" />
-            <h4 class="fw-bold">Ductless</h4>
-            <p class="service-explanation">Repair & Service</p>
+            <div>
+              <h4 class="fw-bold">Ductless</h4>
+              <p class="service-explanation">Repair & Service</p>
+            </div>
           </div>
         </div>
 
@@ -111,8 +113,12 @@
         <div class="col-12 col-md-4 mb-4 mb-md-0">
           <div class="bg-light p-4 h-100 text-center rounded">
             <img src="assets/images/maintenance.svg" alt="Maintenance" class="mb-3" />
-            <h4 class="fw-bold">Maintenance</h4>
-            <p class="service-explanation">Preventative Solutions</p>
+            <div>
+              <h4 class="fw-bold">Maintenance</h4>
+              <p class="service-explanation">Preventative Solutions</p>
+
+            </div>
+
           </div>
         </div>
 
@@ -154,21 +160,32 @@
   <!-- Branch Locator Section: Clicking on the buttons should make the map switch to show the correct location.
     Note: We have provided the HTML below to guide and help you in developing the code for this section.
     Hint: There are multiple options to build the functionality below and depending on your solution, you may or may not have to change the sample HTML code below to match your script. -->
-  <section id="branch-locator" class="container">
-    <h2>Branch Locator</h2>
-    <div class="row">
-      <div class="col-4">
-        <button class="active" data-iframe-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.1807504322505!2d-79.34041072322796!3d43.81061007109505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d373b2a1e6c9%3A0x8e5854394a5bce26!2sSearchKings!5e0!3m2!1sen!2sca!4v1726233530989!5m2!1sen!2sca">4051 Gordon Baker Rd.<br />Scarborough, ON M1W 2P3</button>
-        <button data-iframe-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5208.683341044254!2d-123.01243192300674!3d49.25096957299867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676de2704755b%3A0x530d247b48cc3312!2s3602%20Gilmore%20Wy%2C%20Burnaby%2C%20BC%20V5G%204W7!5e0!3m2!1sen!2sca!4v1744203472114!5m2!1sen!2sca">3602 Gilmore Way<br />Burnaby Unit, BC V5G 4W7</button>
+    <section id="branch-locator" class="container py-5">
+      <h1>Branch Locator</h1>
+      <div class="row">
+        <!-- Buttons Section -->
+        <div class="col-12 col-md-4 mb-4 mb-md-0 d-flex flex-column flex-md-column flex-sm-row gap-3">
+          <button class="branch-btn active flex-fill" data-iframe-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.1807504322505!2d-79.34041072322796!3d43.81061007109505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d373b2a1e6c9%3A0x8e5854394a5bce26!2sSearchKings!5e0!3m2!1sen!2sca!4v1726233530989!5m2!1sen!2sca">
+            4051 Gordon Baker Rd.<br />Scarborough, ON M1W 2P3
+          </button>
+          <button class="branch-btn flex-fill" data-iframe-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5208.683341044254!2d-123.01243192300674!3d49.25096957299867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548676de2704755b%3A0x530d247b48cc3312!2s3602%20Gilmore%20Wy%2C%20Burnaby%2C%20BC%20V5G%204W7!5e0!3m2!1sen!2sca!4v1744203472114!5m2!1sen!2sca">
+            3602 Gilmore Way<br />Burnaby Unit, BC V5G 4W7
+          </button>
+        </div>
+    
+        <!-- Google Map -->
+        <div class="col-12 col-md-8">
+          <iframe id="map" src="" height="400" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
       </div>
-      <div class="col-8">
-        <iframe id="map" src="" height="100%" width="100%"></iframe>
-      </div>
-    </div>
-  </section>
+    </section>
 
   <!-- /Branch Locator Section -->
   <!-- Footer Section -->
+  <footer>
+    <span class="copyright">Copyright © 2023 [Company Name]. All Rights Reserved.</span> <span class="underline">Privacy Policy</span>
+  </footer>
+
   <!-- /Footer Section -->
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
