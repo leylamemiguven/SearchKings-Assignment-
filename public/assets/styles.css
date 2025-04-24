@@ -12,10 +12,34 @@ body{
   font-family: "Albert Sans", sans-serif;
 }
 
+h1{
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+}
+
 h2{
   font-family: "Red Hat Display", sans-serif;
   font-size: 50px !important;
   font-weight: 900;
+}
+
+
+h3{
+  color: var(--brand-primary);
+  font-size: 40px;
+  font-family: 'Albert Sans', sans-serif;
+}
+
+h4{
+  font-family: "Red Hat Display", sans-serif !important;
+  font-size: 35px !important;
+  font-weight: 700 !important;
+  line-height: 132.5% !important;
+}
+
+.bg-light {
+  background-color: #F5F5F5 !important;
 }
 
 /* header and navbar section */
@@ -23,9 +47,22 @@ h2{
   padding: 2em 0;
 }
 
+.header-item{
+  display:flex;
+  align-items: center;
+  text-align: left;
+
+}
+
+.header-img{
+  padding-right: 0.6rem;
+}
+
+
 .location-txt{
   font-size: 23px;
   font-weight: 700;
+  line-height: 1px;
 }
 
 .call-txt{
@@ -66,9 +103,9 @@ h2{
 
 /* request quote section*/
 .quote-banner {
-  background-color: #f8f9fa; /* light gray background for separation */
-  padding: none !important;
-  margin:none !important;
+  background-color: #F5F5F5;
+  /* padding: none !important;
+  margin:none !important; */
 }
 
 .quote-banner h2 {
@@ -80,10 +117,41 @@ h2{
   padding: 5rem;
 }
 
+
+  
+
+  
+
+/* / request quote section*/
+/* Services and Solution section */
+
+
+
+.bg-teal {
+  background-color: var(--brand-primary) !important;
+}
+
+#services-intro{
+  margin-right: 5rem !important;
+}
+
+.service-explanation{
+  line-height: 132.5%;
+  font-family: "Red Hat Display", sans-serif;
+  font-size:25px
+}
+
+.bg-brown{
+  background: var(--brand-secondary);
+}
+
+
+
 @media (max-width: 767.98px) {
   .quote-banner h2 {
     font-size: 1.5rem;
   }
+  #services-intro{
+    margin-right: 0 !important;
+  }
 }
-/* / request quote section*/
-

@@ -42,7 +42,7 @@ const buildNavigation = async () => {
 
       // Dropdown for items with submenu
       if (item.submenu) {
-        li.className = 'nav-item dropdown';
+        li.className = 'nav-item dropdown mx-5';
 
         const a = document.createElement('a');
         a.className = 'nav-link dropdown-toggle'

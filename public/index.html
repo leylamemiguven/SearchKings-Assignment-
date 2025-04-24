@@ -18,24 +18,29 @@
     2. Once JSON data is fetched, loop through each item and populate <nav id="navigation"></nav> -->
     <!-- header and navbar section -->
   <section>
-    <header class="bg-white border-bottom">
+    <header class="bg-white">
       <div class="container d-flex justify-content-between align-items-center py-3 flex-wrap">
         <div id="header" class="d-flex align-items-center mb-2 mb-md-0">
           <img src="assets/images/hvac-logo.svg" alt="HVAC Logo" class="me-2" height="80">
         </div>
         <div class="d-flex align-items-center text-center">
-          <div class="me-4">
-            <!-- <span class="material-symbols-outlined">
-              pin_drop
-            </span> -->
-            <img src="assets/images/location.png" alt="pin drop">
-            <small class="location-txt">Location</small><br>
-            <span class="call-txt">Subline</span>
+          <div class="header-item me-4">
+            <div class="header-img">
+              <img src="assets/images/location.png" alt="pin drop">
+            </div>
+            <div>
+              <small class="location-txt">Location</small><br>
+              <span class="call-txt">Subline</span>
           </div>
-          <div class="me-4">
-            <img src="assets/images/call.png" alt="phone">
-            <small class="call-txt">Call us now</small><br>
-            <span class="number-txt">555-555-5555</span>
+          </div>
+          <div class="header-item me-4">
+            <div class="header-img">
+              <img src="assets/images/call.png" alt="phone">
+            </div>
+            <div>
+              <small class="call-txt">Call us now</small><br>
+              <span class="number-txt">555-555-5555</span>
+            </div>
           </div>
           <button id="emergency" class="btn custom-accent-btn text-uppercase fw-bold">24/7 Emergency Service</button>
         </div>
@@ -45,24 +50,105 @@
 
   </section>
   <!-- / header and navbar section  -->
-<section class="quote-banner">
-  <div class="row g-0 align-items-center">
-    <!-- Full-width image without container -->
-    <div class="col-lg-6">
-      <img src="assets/images/Left-image.png" alt="Technician" class="img-fluid w-100 h-100 object-fit-cover">
-    </div>
 
-    <!-- Text inside a container -->
-    <div class="col-lg-6">
-      <div id="quote-banner-txt" class="container py-4">
-        <h2>Your Local Heating<br>& Cooling Specialist</h2>
-        <p class="mb-3">We provide customer experience that goes beyond the ordinary and expected.</p>
-        <p class="mb-4">Our trained and certified technicians are trained to solve any heating or cooling need and stand behind our work with a 100% satisfaction guarantee.</p>
-        <button class="btn custom-accent-btn text-uppercase fw-bold">Request a Quote</button>
+  <!-- Quote banner section -->
+  <section class="quote-banner">
+    <div class="row g-0 align-items-center">
+      <div class="col-lg-6">
+        <img src="assets/images/Left-image.png" alt="Technician" class="img-fluid w-100 h-100 object-fit-cover">
+      </div>
+      <div class="col-lg-6">
+        <div id="quote-banner-txt" class="container py-4">
+          <h2>Your Local Heating<br>& Cooling Specialist</h2>
+          <p class="mb-3">We provide customer experience that goes beyond the ordinary and expected.</p>
+          <p class="mb-4">Our trained and certified technicians are trained to solve any heating or cooling need and stand behind our work with a 100% satisfaction guarantee.</p>
+          <button class="btn custom-accent-btn text-uppercase fw-bold">Request a Quote</button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+    <!-- / Quote banner section -->
+
+    <!-- Services and Solutions Section  -->
+  <!-- Services & Solutions Section -->
+  <section class="services-solutions py-5">
+    <!-- Headings (inside container) -->
+    <div class="container">
+      <h3 class="repair-heading mb-2">In Need of a Repair?</h3>
+      <h1 class="services-title mb-4">Services & Solutions</h1>
+    </div>
+
+    <!-- Description and Promo (flush left, full width) -->
+    <div id="services-intro" class="row mb-5 gx-0 mx-0">
+      <div class="col-12 col-md-8 mb-3 mb-md-0 ps-0">
+        <div class="bg-light p-4 h-100 w-100">
+          If you are facing a breakdown, need an emergency repair, or unsure if your systems are operating efficiently, we are available 24/7 to answer your questions and get you back to comfort.
+        </div>
+      </div>
+      <div class="col-12 col-md-4 ps-0">
+        <div class="bg-teal text-white p-4 h-100 w-100">
+          <strong>[Current Month] Repair Promotion:</strong><br>
+          20% discount on repairs for veterans, first responders and their families*<br>
+          <small>*Conditions</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ductless / Maintenance / Contact Boxes (inside container) -->
+    <div class="container">
+      <div class="row">
+        <!-- Ductless Box -->
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="bg-light p-4 h-100 text-center rounded">
+            <img src="assets/images/ductless.svg" alt="Ductless" class="mb-3" />
+            <h4 class="fw-bold">Ductless</h4>
+            <p class="service-explanation">Repair & Service</p>
+          </div>
+        </div>
+
+        <!-- Maintenance Box -->
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <div class="bg-light p-4 h-100 text-center rounded">
+            <img src="assets/images/maintenance.svg" alt="Maintenance" class="mb-3" />
+            <h4 class="fw-bold">Maintenance</h4>
+            <p class="service-explanation">Preventative Solutions</p>
+          </div>
+        </div>
+
+        <!-- Contact Box -->
+        <div class="col-12 col-md-4">
+          <div class="d-flex flex-column h-100">
+            <!-- Send Message Box -->
+            <div class="bg-light d-flex align-items-center rounded h-50">
+              <div class="bg-brown text-white p-3 me-3 rounded">
+                <img src="assets/images/mail.svg" alt="Send Message" class="mb-0" />
+              </div>
+              <div>
+                <strong>Send us a Message</strong><br />
+                Unsure what you require or what system you have?
+              </div>
+            </div>
+            <!-- Call Experts Box -->
+            <div class="bg-light d-flex align-items-center rounded h-50 mt-3">
+              <div class="bg-brown text-white p-3 me-3 rounded">
+                <img src="assets/images/phone.svg" alt="Call Experts" class="mb-0" />
+              </div>
+              <div>
+                <strong>Call our Experts</strong><br />
+                555-555-5555
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    
+    
+
+  <!-- / Services and Solutions Section  -->
   
 
   <!-- Branch Locator Section: Clicking on the buttons should make the map switch to show the correct location.
@@ -80,6 +166,10 @@
       </div>
     </div>
   </section>
+
+  <!-- /Branch Locator Section -->
+  <!-- Footer Section -->
+  <!-- /Footer Section -->
 
   <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
