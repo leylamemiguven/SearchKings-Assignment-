@@ -122,6 +122,15 @@ h4{
 
 /* Services and Solutions section */
 
+.boxes{
+  font-family: "Red Hat Display", sans-serif;
+
+}
+
+.box{
+  align-content: center;
+}
+
 .bg-teal {
   background-color: var(--brand-primary) !important;
 }
@@ -132,12 +141,28 @@ h4{
 
 .service-explanation{
   line-height: 132.5%;
-  font-family: "Red Hat Display", sans-serif;
   font-size:25px
 }
 
 .bg-brown{
   background: var(--brand-secondary);
+  height: 100%;
+  align-content: center;
+  width: 80px;
+  text-align: center;
+}
+
+.contact-title{
+  font-size: 20px;
+  font-weight: 700;
+
+
+}
+
+.phone-num{
+  font-size: 30px;
+  font-weight: 400;
+
 }
 
 /* /Services and Solutions section*/
@@ -193,9 +218,6 @@ footer{
 
 
 @media (max-width: 767.98px) {
-  .quote-banner h2 {
-    font-size: 1.5rem;
-  }
   #services-intro{
     margin-right: 0 !important;
   }
