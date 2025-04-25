@@ -85,6 +85,27 @@ const buildNavigation = async () => {
     container.appendChild(collapse);
     nav.appendChild(container);
     navContainer.appendChild(nav);
+    const dropdownToggles = document.querySelectorAll('.nav-item.dropdown');
+
+    dropdownToggles.forEach(dropdown => {
+      const toggleLink = dropdown.querySelector('.dropdown-toggle');
+      const menu = dropdown.querySelector('.dropdown-menu');
+
+      
+      if (window.innerWidth >= 992) {
+        dropdown.addEventListener('mouseenter', () => {
+          dropdown.classList.add('show');
+          menu.classList.add('show');
+          toggleLink.setAttribute('aria-expanded', 'true');
+        });
+
+        dropdown.addEventListener('mouseleave', () => {
+          dropdown.classList.remove('show');
+          menu.classList.remove('show');
+          toggleLink.setAttribute('aria-expanded', 'false');
+        });
+      }
+    });
 
   } catch (error) {
     console.error('Error loading navigation data:', error);

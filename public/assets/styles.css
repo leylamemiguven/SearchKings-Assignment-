@@ -90,13 +90,42 @@ h4{
 }
 
 .custom-accent-btn:hover {
-  background-color: #e68a00; /* slightly darker for hover effect */
+  background-color: #e68a00; 
   color: white;
 }
 
 .navbar-nav .nav-link {
+  position: relative;
+  display: inline-block;
   color: white !important;
   font-weight: 700;
+  font-size: 1rem;
+  padding-bottom: 2px; 
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle)::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: var(--brand-accent);
+  transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:not(.dropdown-toggle):hover::after {
+  width: 100%;
+}
+
+.navbar-nav .dropdown-menu {
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F99E15' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 /* /header and navbar section */
@@ -104,8 +133,6 @@ h4{
 /* request quote section*/
 .quote-banner {
   background-color: #F5F5F5;
-  /* padding: none !important;
-  margin:none !important; */
 }
 
 .quote-banner h2 {
@@ -129,6 +156,12 @@ h4{
 
 .box{
   align-content: center;
+}
+
+.box:hover {
+  background-color: #eaeaea !important;
+  transition: background-color 0.3s ease !important;
+  cursor: pointer !important;
 }
 
 .bg-teal {
@@ -175,7 +208,7 @@ h4{
 }
 
 .branch-btn {
-  background-color: #f5f5f5; /* same as .bg-light */
+  background-color: #f5f5f5;
   color: black;
   font-size: 18px;
   border: none;
