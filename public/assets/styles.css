@@ -51,6 +51,7 @@ h4{
   display:flex;
   align-items: center;
   text-align: left;
+  padding: 0 1rem;
 
 }
 
@@ -164,13 +165,14 @@ h4{
   cursor: pointer !important;
 }
 
+.services-intro{
+  padding-left: 0 7rem !important;
+}
+
 .bg-teal {
   background-color: var(--brand-primary) !important;
 }
 
-#services-intro{
-  margin-right: 5rem !important;
-}
 
 .service-explanation{
   line-height: 132.5%;
@@ -190,6 +192,10 @@ h4{
   font-weight: 700;
 
 
+}
+
+.contact-text{
+  padding: 1rem 0.5rem;
 }
 
 .phone-num{
@@ -254,8 +260,9 @@ footer{
 
 
 
-@media (max-width: 767.98px) {
-  #services-intro{
-    margin-right: 0 !important;
+/* @media (max-width: 767.98px) {
+  .services-intro{
+    padding-left: 0 !important;
   }
-}
+  
+} */

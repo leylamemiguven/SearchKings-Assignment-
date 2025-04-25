@@ -18,38 +18,54 @@
     1. Please fetch and use the data found in https://cdn.searchkings.ca/public-asset/js/test.json
     2. Once JSON data is fetched, loop through each item and populate <nav id="navigation"></nav> -->
     <!-- header and navbar section -->
-  <section>
-    <header class="bg-white">
-      <div class="container d-flex justify-content-between align-items-center py-3 flex-wrap">
-        <div id="header" class="d-flex align-items-center mb-2 mb-md-0">
-          <img src="assets/images/hvac-logo.svg" alt="HVAC Logo" class="me-2" height="80">
+    <section>
+      <header class="bg-white">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-12 col-lg-4 text-center text-lg-start mb-3 mb-lg-0">
+              <img src="assets/images/hvac-logo.svg" alt="HVAC Logo" class="me-2" height="80">
+            </div>
+    
+            <!-- Contact Info + Emergency Button -->
+            <div class="col-12 col-lg-8">
+              <div class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center gap-3 text-center text-lg-start">
+                
+                <!-- Location -->
+                <div class="header-item">
+                  <div class="header-img mb-1">
+                    <img src="assets/images/location.png" alt="pin drop">
+                  </div>
+                  <div>
+                    <small class="location-txt">Location</small><br>
+                    <span class="call-txt">Subline</span>
+                  </div>
+                </div>
+    
+                <!-- Call Us -->
+                <div class="header-item">
+                  <div class="header-img mb-1">
+                    <img src="assets/images/call.png" alt="phone">
+                  </div>
+                  <div>
+                    <small class="call-txt">Call us now</small><br>
+                    <span class="number-txt">555-555-5555</span>
+                  </div>
+                </div>
+    
+                <!-- Emergency Button -->
+                <button id="emergency" class="btn custom-accent-btn text-uppercase fw-bold">
+                  24/7 Emergency Service
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="d-flex align-items-center text-center">
-          <div class="header-item me-4">
-            <div class="header-img">
-              <img src="assets/images/location.png" alt="pin drop">
-            </div>
-            <div>
-              <small class="location-txt">Location</small><br>
-              <span class="call-txt">Subline</span>
-          </div>
-          </div>
-          <div class="header-item me-4">
-            <div class="header-img">
-              <img src="assets/images/call.png" alt="phone">
-            </div>
-            <div>
-              <small class="call-txt">Call us now</small><br>
-              <span class="number-txt">555-555-5555</span>
-            </div>
-          </div>
-          <button id="emergency" class="btn custom-accent-btn text-uppercase fw-bold">24/7 Emergency Service</button>
-        </div>
-      </div>
-      <div id="navigation"></div>
-    </header>
-
-  </section>
+    
+        <!-- Navigation -->
+        <div id="navigation"></div>
+      </header>
+    </section>
   <!-- / header and navbar section  -->
 
   <!-- Quote banner section -->
@@ -74,19 +90,25 @@
     <div class="container">
       <h3 class="repair-heading mb-2">In Need of a Repair?</h3>
       <h1 class="services-title mb-4">Services & Solutions</h1>
-
-      <!-- Description and Promo -->
-      <div class="row mb-5 gx-0">
-        <div class="col-12 col-lg-8 mb-3 mb-lg-0">
-          <div class="full-bleed-left bg-light h-100 d-flex align-items-center">
-            <div class="container px-4 py-3">
-              If you are facing a breakdown, need an emergency repair, or unsure if your systems are operating efficiently, we are available 24/7 to answer your questions and get you back to comfort.
+    </div>
+  
+    <!-- Description and Promo OUTSIDE .container to remove left margin -->
+    <div class="container-fluid px-0">
+      <div class="row gx-0">
+        <!-- Gray Box -->
+        <div class="col-12 col-lg-8">
+          <div class="bg-light p-4 h-100 d-flex align-items-center services-intro">
+            <div class="w-100">
+              If you are facing a breakdown, need an emergency repair, or unsure if your systems are operating efficiently,
+              we are available 24/7 to answer your questions and get you back to comfort.
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-4">
+  
+        <!-- Teal Box -->
+        <div class="col-12 col-lg-4 pe-lg-5">
           <div class="bg-teal text-white p-4 h-100 d-flex align-items-center">
-            <div>
+            <div class="w-100">
               <strong>[Current Month] Repair Promotion:</strong><br>
               20% discount on repairs for veterans, first responders and their families*<br>
               <small>*Conditions</small>
@@ -94,9 +116,12 @@
           </div>
         </div>
       </div>
-
-      <!-- Ductless / Maintenance / Contact -->
+    </div>
+  
+    <!-- Rest of the section (Boxes) back in the container -->
+    <div class="container mt-5">
       <div class="row">
+        <!-- Ductless Box -->
         <div class="col-12 col-lg-4 mb-4 mb-lg-0">
           <div class="bg-light p-4 h-100 text-center rounded box">
             <img src="assets/images/ductless.svg" alt="Ductless" class="mb-3" width="100px" />
@@ -104,6 +129,7 @@
             <p class="service-explanation">Repair & Service</p>
           </div>
         </div>
+        <!-- Maintenance Box -->
         <div class="col-12 col-lg-4 mb-4 mb-lg-0">
           <div class="bg-light p-4 h-100 text-center rounded box">
             <img src="assets/images/maintenance.svg" alt="Maintenance" class="mb-3" width="70px" />
@@ -111,13 +137,14 @@
             <p class="service-explanation">Preventative Solutions</p>
           </div>
         </div>
+        <!-- Contact Box -->
         <div class="col-12 col-lg-4">
           <div class="d-flex flex-column h-100">
-            <div class="bg-light d-flex align-items-center rounded h-50 mt-3 box">
+            <div class="bg-light d-flex align-items-center rounded h-50 box">
               <div class="bg-brown text-white p-3 me-3 rounded">
                 <img src="assets/images/mail.svg" alt="Send Message" class="mb-0" />
               </div>
-              <div>
+              <div class="contact-text">
                 <strong class="contact-title">Send us a Message</strong><br />
                 Unsure what you require or what system you have?
               </div>
@@ -126,7 +153,7 @@
               <div class="bg-brown text-white p-3 me-3 rounded">
                 <img src="assets/images/phone.svg" alt="Call Experts" class="mb-0" />
               </div>
-              <div>
+              <div class="contact-text">
                 <strong class="contact-title">Call our Experts</strong><br />
                 <span class="phone-num">555-555-5555</span>
               </div>
